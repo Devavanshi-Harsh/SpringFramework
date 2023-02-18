@@ -3,7 +3,7 @@
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 
-	<bean id="random" class="com.SpringFramework.Test.Student">
+	<bean id="random" class="com.SpringFramework.PropertyInjection.Student">
 		<property name="a">
 			<value>2</value>
 		</property>
@@ -12,14 +12,14 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 		</property>
 	</bean>
 
-	<bean id="random2" class="com.SpringFramework.Test.Student">
+	<bean id="random2" class="com.SpringFramework.PropertyInjection.Student">
 		<property name="a" value="3" />
 		<property name="b" value="Seema" />
 
 	</bean>
 
-	<bean id="random3" class="com.SpringFramework.Test.Student" p:a="2" p:b="Harsh2" />
-	<bean id="Student1" class="com.SpringFramework.Test.CollectionsPractice">
+	<bean id="random3" class="com.SpringFramework.PropertyInjection.Student" p:a="2" p:b="Harsh2" />
+	<bean id="Student1" class="com.SpringFramework.PropertyInjection.CollectionsPractice">
 		<property name="name">
 			<value>Kiran</value>
 		</property>

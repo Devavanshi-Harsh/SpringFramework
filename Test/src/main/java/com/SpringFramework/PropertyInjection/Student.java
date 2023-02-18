@@ -1,4 +1,4 @@
-package com.SpringFramework.Test;
+package com.SpringFramework.PropertyInjection;
 
 public class Student {
     public int a;

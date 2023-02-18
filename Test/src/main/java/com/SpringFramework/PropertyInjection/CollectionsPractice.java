@@ -1,4 +1,4 @@
-package com.SpringFramework.Test;
+package com.SpringFramework.PropertyInjection;
 
 import java.util.List;
 import java.util.Map;

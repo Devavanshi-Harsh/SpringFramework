@@ -1,4 +1,4 @@
-package com.SpringFramework.Test;
+package com.SpringFramework.PropertyInjection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class App {
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("PropertyInjection.xml");
 		Student s = (Student)context.getBean("random");
 		System.out.println(s.b);
 		Student e = (Student)context.getBean("random2");
