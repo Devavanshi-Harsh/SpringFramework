@@ -3,7 +3,7 @@ package com.SpringFramework.LifeCycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-class AnotherLifeCycleClass  implements InitializingBean, DisposableBean{
+class InterfaceLifeCycleClass  implements InitializingBean, DisposableBean{
 	private String name;
 	private int price;
 	public String getName() {
@@ -20,7 +20,7 @@ class AnotherLifeCycleClass  implements InitializingBean, DisposableBean{
 	}
 	@Override
 	public String toString() {
-		return "LifeCycleClass [name=" + name + ", price=" + price + "]";
+		return "InterfaceLifeCycleClass [name=" + name + ", price=" + price + "]";
 	}
 	
 	//same as init method we can change the name but not the signature
