@@ -9,6 +9,7 @@ public class LoaderClass {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/SpringFramework/Autowiring/Autowiring.xml");
 		AutowiringClass c = context.getBean("person", AutowiringClass.class);
 		System.out.println(c);
+		
 
 	}
 

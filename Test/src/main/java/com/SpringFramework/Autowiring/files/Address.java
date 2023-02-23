@@ -8,16 +8,13 @@ public class Address {
 	}
 	public void setCity(String city) {
 		this.city = city;
-		System.out.println("city setted");
-			
 	}
 	public String getDistrict() {
 		return district;
 	}
 	public void setDistrict(String district) {
+	
 		this.district = district;
-		System.out.println("District setted");
-		
 	}
 	
 	
