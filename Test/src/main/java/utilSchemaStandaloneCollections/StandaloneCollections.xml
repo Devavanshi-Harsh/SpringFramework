@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-2.5.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+	<context:component-scan base-package="com.springinaction.
+service" />
+	<util:list list-class="java.util.ArrayList" id="alList">
+		<value>10</value>
+		<value>20</value>
+		<value>30</value>
+		<value>30</value>
+		<value>80</value>
+		<value>15</value>
+	</util:list>
+	<util:list list-class="java.util.LinkedList" id="llList">
+		<value>510</value>
+		<value>510</value>
+		<value>620</value>
+		<value>230</value>
+		<value>680</value>
+		<value>315</value>
+	</util:list>
+	<util:set set-class="java.util.HashSet" id="hsSet">
+		<value>510</value>
+		<value>620</value>
+		<value>620</value>
+		<value>230</value>
+		<value>680</value>
+		<value>315</value>
+	</util:set>
+	<util:set set-class="java.util.LinkedHashSet" id="lhsSet">
+		<value>510</value>
+		<value>620</value>
+		<value>620</value>
+		<value>230</value>
+		<value>680</value>
+		<value>315</value>
+	</util:set>
+	<util:map map-class="java.util.HashMap" id="hmMap">
+		<entry key="Harsh" value="25" />
+		<entry key="Seema" value="26" />
+		<entry key="Ravi" value="18" />
+		<entry key="Rajni" value="93" />
+		<entry key="Niti" value="19" />
+	</util:map>
+	<bean name="collections" class="utilSchemaStandaloneCollections.CollectionClasses">
+		<constructor-arg ref="llList" />
+		<constructor-arg ref="alList" />
+		<constructor-arg ref="hsSet" />
+		<constructor-arg ref="lhsSet" />
+		<constructor-arg ref="hmMap" />
+	</bean>
+
+</beans>
