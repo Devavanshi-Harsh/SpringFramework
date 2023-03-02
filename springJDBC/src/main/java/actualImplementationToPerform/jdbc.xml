@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" name="ds">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/springpractice" />
+		<property name="username" value="root" />
+		<property name="password" value="Exams@1st" />
+	</bean>
+
+	<bean class="org.springframework.jdbc.core.JdbcTemplate" name="jdbcTemp">
+		<property name="dataSource" ref="ds" />
+	</bean>
+
+	<bean class="actualImplementationToPerform.Interfaces.Operations" name="Op">
+		<property name="t" ref="jdbcTemp" />
+	</bean>
+</beans>

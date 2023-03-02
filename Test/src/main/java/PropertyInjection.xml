@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="random" class="com.SpringFramework.PropertyInjection.Student">
+		<property name="a">
+			<value>2</value>
+		</property>
+		<property name="b">
+			<value>Harsh</value>
+		</property>
+	</bean>
+
+	<bean id="random2" class="com.SpringFramework.PropertyInjection.Student">
+		<property name="a" value="3" />
+		<property name="b" value="Seema" />
+
+	</bean>
+
+	<bean id="random3" class="com.SpringFramework.PropertyInjection.Student" p:a="2" p:b="Harsh2" />
+	<bean id="Student1" class="com.SpringFramework.PropertyInjection.CollectionsPractice">
+		<property name="name">
+			<value>Kiran</value>
+		</property>
+		<property name="phoneNumber">
+			<list>
+				<value>8178396703</value>
+				<value>8882143593</value>
+				<value>9811813680</value>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+				<value>New Delhi</value>
+				<value>Patna-Bihar</value>
+				<value>Patna-Bihar</value>
+			</set>
+		</property>
+		<property name="course">
+			<map>
+				<entry key="java" value="200" />
+				<entry key="python" value="300" />
+			</map>
+		</property>
+	</bean>
+</beans>
