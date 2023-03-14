@@ -18,6 +18,7 @@
 		out.println(s);
 	}
 	%></h1>
+	<hr>
 
 </body>
 </html>
