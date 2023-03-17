@@ -7,7 +7,7 @@
 <title>Homepage</title>
 </head>
 <body>
-	<h1>This is home page located inside views</h1>
+	<h1>This is home page located inside Views</h1>
 	<h2>If you are watching this text means it is working fine....</h2>
 	<%
 	String name = (String)request.getAttribute("name");
