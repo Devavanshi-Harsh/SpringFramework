@@ -16,9 +16,9 @@ public class ServiceLayer {
 		this.userDao = userDao;
 	}
 
-	public void createUser(User s) {
+	public int createUser(User s) {
 		System.out.println("Service Layer trying to insert the Data");
-		this.userDao.saveUser(s);
+		return this.userDao.saveUser(s);
 	}
 
 }

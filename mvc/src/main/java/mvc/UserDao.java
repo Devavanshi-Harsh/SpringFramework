@@ -19,7 +19,8 @@ public class UserDao {
 		this.hiberTemp = hiberTemp;
 	}
 	@Transactional
-	public void saveUser(User s) {
-		this.hiberTemp.save(s);
+	public int saveUser(User s) {
+		int id = (Integer)this.hiberTemp.save(s);
+		return id;
 	}
 }

@@ -9,6 +9,7 @@
 </head>
 <body>
 	${comData}
+<h1 style = "color:green" >${message}</h1>
 	<h1>Thanks so much for signing up here...</h1>
 	<h4>
 		email is : ${user.email} 
